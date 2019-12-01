@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Квест в пещерном лабиринте</title>
+  
+  <meta http-equiv='Content-Type' charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content='Экскурсии и квесты в старинных подземельях и в "спортивных" пещерах в Харькове. Сайт создан спелеологами которые посвящают свое свободное время поиску и научному изучению старинных подземных объектов и прочих древностей Харькова. А еще мы увлеченно и увлекательно обо всем этом рассказываем'>
+  
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat:400,700|El+Messiri:400,500|Kurale|Pangolin&amp;subset=cyrillic">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+  
+  <script type="text/javascript" src="../js/jquery-1.2.6.js"></script>
+  
+</head>
+  
+<body>
+  <div id='menu_appear' onclick='menuClick()'>></div>
+  
+  <div id='slider'>
+    <div id='slideIn'>
+    
+      <div id='sl_left' class='slide' onmouseover='opacL_over()' onmouseout='opacL_out()'>
+        <div id='sl_button_left'>&#171;</div>
+      </div>
+      
+      <div id='sl_right' class='slide' onmouseover='opacR_over()' onmouseout='opacR_out()'>
+        <div id='sl_button_right'>&#187;</div>
+      </div>
+      
+      <div id='slideClose'>x</div>
+      <img src="#" onload='adaptiveSL()'>
+    </div>
+  </div>
+  
+  <div class='grid'>
+    
+    <div class='grid_header'>
+      <div class='header'>
+        <p>Подземный Харьков<br> Мир, которого Вы не знали</p>
+        <div class='phones'>
+          <div>Записаться на экскурсию:</div>
+          <div>
+            <div id='vodafone' title='Vodafone'></div><div class='numbers' title='Vodafone'>(066)784-14-46</div>
+          </div>
+          <div>
+            <div id='kievstar' title='Kievstar'></div><div class='numbers' title='Kievstar'>(067)375-18-65</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id='menu' class= 'grid_left'> <!-- grid_left_show -->
+      <div class='logo' id='logo'>
+        <a href= '/'><img src= '../img/logo.png' title='На главную'></a>
+      </div>
+      
+      <div class='menu'>
+        <ul>
+          <li>
+            <a href='/' id='to_main'>Главная</a>
+          </li>
+          <li>
+            <a href='../pages/ist_podz.html' id='to_ist_podz' title='Экскурсия в старинный подземный ход в центральной части города'>ИСТОРИЧЕСКИЕ ПОДЗЕМЕЛЬЯ</a>
+          </li>
+          <li>
+            <a href='../pages/cavex_quest.html' id='to_cavex_quest' title='Локация за пределами города' style='filter: drop-shadow(2px 5px 10px #FCDB7B);'>КВЕСТ В ПЕЩЕРНЫХ ЛАБИРИНТАХ</a>
+          </li>
+          <!-- <li> -->
+            <!-- <a href='pages/' id='booking'>Записаться</a> -->
+          <!-- </li> -->
+          <li>
+            <a href='../pages/briefing.html' id='to_briefing' title='Что одеть, что взять, чего ждать'>ИНСТРУКТАЖ</a>
+          </li>
+          <li>
+            <a href='../pages/safety_rules.html' id='to_safety_rules' title='Must have!'>ТЕХНИКА БЕЗОПАСНОСТИ</a>
+          </li>
+          <li>
+            <a href='../pages/articles.html' id='to_articles' title='Статьи и фотоотчеты'>ЛЮБОЗНАТЕЛЬНЫМ</a>
+           </li>
+          <li>
+            <a href='../pages/questions.html' id='to_questions' title='Если есть, заходим...'>ВОПРОСЫ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class='grid_content'>
+      <div class='content_backgr'>
+        <div id='content_backgr0'></div>
+        <div id='content_backgr1'></div>
+        <div id='content_backgr2'></div>
+      </div>
+      <div class='content'>
+        <div class= 'pageLevel_1' id='cavex_quest'>
+          <h1>Подземный лабиринт</h1>
+          <p>Приключение на целый день для компании из 10 - 15 человек.</p>
+          <p>Это испытание не для слабых духом. Сильный физически, здесь не обязательно будет лучшим: острый ум, сноровка, интуиция и ловкость — это качества, которые потребуются смельчаку, бросившему вызов духам пещер. Запутанные лабиринты, абсолютная тьма, и это еще не всё…</p>
+          <p>Пройдите подземный квест, получите незабываемые впечатления, попутно научившись ориентироваться и безопасно находится в пещерах.</p>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_1.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_2.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_3.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_4.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_5.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_6.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_7.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_8.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_9.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_10.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_11.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_12.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_13.jpg"  title="">
+            <img src="../../photo/cavex_quest/prev/prev_14.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_15.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_16.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_17.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_18.jpg" title="">
+          </figure>
+          
+          <figure class='init'>
+            <img src="../../photo/cavex_quest/prev/prev_19.jpg" title="">
+            <img src="../../photo/cavex_quest/prev/prev_20.jpg"  title="">
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+    <div class='grid_footer'>
+        <!-- <p>Вас большая компания (10 и более человек), и есть желание «ворваться по взрослому»? Для Вас экстремальная квест-игра в стиле альтернативный туризм. Войдите в подземный лабиринт. Найдите пещерного тролля, отгадайте его загадки, выполните задания и найдете выход. Мы можем организовать ваше приключение длительностью в один или два дня. С ночевкой на поверхности, или под землей.</p> -->
+    </div>
+  
+  </div>
+  
+  <script type='text/javascript' src="../js/configuration.js"></script>
+  
+</body>
+</html>
