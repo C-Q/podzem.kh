@@ -24,8 +24,8 @@ var sl_button_right = document.body.querySelector('#sl_button_right');
 var pageID = document.body.querySelector('.content').firstElementChild.getAttribute('id');
 var lastImgSrc = init[init.length-1].lastElementChild.getAttribute('src');
 var photoNumber;
-var positionInfo;
-
+var photoNumber_nextSimb;
+var nestingLevel;
 
   // slider start {
 for(let fig=0; fig<=init.length-1; fig++) {
@@ -33,17 +33,22 @@ for(let fig=0; fig<=init.length-1; fig++) {
     var target = event.target;
     if (target.tagName == 'IMG') {
       slider.style.display = 'block';
-      photoNumber = target.getAttribute('src')[23 + pageID.length];
-      var photoNumber_nextSimb = target.getAttribute('src')[24 + pageID.length];
+      photoNumber = target.getAttribute('src').slice(-6,-5);
+      photoNumber_nextSimb = target.getAttribute('src').slice(-5,-4);
       console.log('1-й символ: ' + photoNumber);
       console.log('2-й символ: ' + photoNumber_nextSimb);
-      
-      if (!isNaN(photoNumber_nextSimb)){
+
+      if (!isNaN(photoNumber)){
         photoNumber += photoNumber_nextSimb;
       }
-      
-      img.src = '../../photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
+      if (isNaN(photoNumber)){
+        photoNumber = photoNumber_nextSimb;
+      }
+
+      nestingLevel = target.getAttribute('src').split('photo')[0];
+      img.src = nestingLevel + 'photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
       console.log('стартовое фото № ' + photoNumber);
+      console.log(img.src);
     }
   }
 };
@@ -67,16 +72,14 @@ var lastPhotoNum = lastPhoto_FirstSimb + lastPhoto_SecondSimb;
 console.log('всего фоток на странице: ' + lastPhotoNum);
     // get quantity of photos on page }
 
-+photoNumber;
+// +photoNumber;
 sl_left.onclick = function() {
   photoNumber--;
   console.log('переход на фото: ' + photoNumber);
   if (photoNumber < 1) {
     photoNumber = lastPhotoNum;
   }
-  img.src = '../../photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
-  // sizeImg = img.getBoundingClientRect();
-  // setTimeout(adaptiveSL, 300);
+  img.src = nestingLevel + 'photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
 }
 sl_right.onclick = function() {
   photoNumber++;
@@ -84,9 +87,7 @@ sl_right.onclick = function() {
   if (photoNumber > lastPhotoNum) {
     photoNumber = 1;
   }
-  img.src = '../../photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
-  // sizeImg = img.getBoundingClientRect();
-  // setTimeout(adaptiveSL, 300);
+  img.src = nestingLevel + 'photo/' +pageID+ '/full/full_' +photoNumber+ '.jpg';
 };
   // flipping slider }
 

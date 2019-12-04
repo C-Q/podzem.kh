@@ -4,7 +4,7 @@
 
 body {
   width: 100%;
-  background: url('/img/all_backgr.jpg') no-repeat #e9e7e5;
+  background: url('../img/all_backgr.jpg') no-repeat #e9e7e5;
   background-size: 200vh 100vh;
   background-attachment: fixed;
   position: relative;
@@ -15,7 +15,7 @@ body {
 #menu_appear {
   display: none;
   z-index: 3;
-  position: absolute;
+  /*position: absolute;*/
   position: fixed;
   top: 50vh;
   border: 2px solid red;
@@ -57,9 +57,7 @@ body {
   min-width: 60px;
   cursor: pointer;
 }
-/* .slide:hover { */
-  /* opacity: 0.3; */
-/* } */
+
 #sl_button_left, #sl_button_right {
   position: absolute;
   top: 45%;
@@ -131,7 +129,7 @@ figure img {
 }
 .grid_header {
   position: relative;
-  background: url('../../img/header_backgr.png');
+  background: url('../img/header_backgr.png');
   background-size: 100% 100%;
   grid-area: header;  /* сетка */
   /* outline: 1px solid blue; */
@@ -172,28 +170,28 @@ figure img {
 #content_backgr0 {
   /* min-height: 250px; */
   min-height: 250px;
-  background: url('/img/content_backgr0.png');
+  background: url('../img/content_backgr0.png');
   background-size: 100%;
   background-position: top;
 }
 #content_backgr1 {
   flex-grow: 2;
   min-height: 200px;
-  background: url('/img/content_backgr1.png');
+  background: url('../img/content_backgr1.png');
   background-size: 100%;
   background-repeat: repeat-y;
 }
 #content_backgr2 {
   /* min-height: 250px; */
   min-height: 200px;
-  background: url('/img/content_backgr0.png');
+  background: url('../img/content_backgr0.png');
   background-size: 100%;
   background-position: bottom;
 }
 
 .grid_footer {
   grid-area: footer;  /* сетка */
-  background: url('/img/footer_backgr.png');
+  background: url('../img/footer_backgr.png');
   background-size: 100% 100%;
   /* outline: 1px solid blue;  /* отладочная рамка */
   min-height: 100px;
@@ -239,14 +237,14 @@ figure img {
 }
 .header .phones #vodafone {
   /* outline: 1px solid blue; */
-  background: url(../../img/sprite.png);
+  background: url('../img/sprite.png');
   width:25px; height:25px;
   background-position: -10px -32px;
   display: inline-block;
 }
 .header .phones #kievstar {
   /* outline: 1px solid blue; */
-  background: url(../../img/sprite.png);
+  background: url('../img/sprite.png');
   width:25px; height:25px;
   background-position: -10px 0px;
   display: inline-block;
@@ -291,7 +289,7 @@ figure img {
   font-family: 'Caveat', cursive;  /* Пункты МЕНЮ */
   font-size: 23px;
   line-height: 130%;
-  background: url(../../img/vintage_plank0.png);
+  background: url('../img/vintage_plank0.png');
   background-size: 100% 100%;
   filter: brightness(135%);
 }
@@ -323,7 +321,7 @@ figure img {
   cursor: pointer;
 }
 .content h1 {
-  font-size: 22px;
+  /*font-size: 22px;*/
   text-align: center;
   margin: 15px 0 5px;
   font-family: 'El Messiri', sans-serif;
