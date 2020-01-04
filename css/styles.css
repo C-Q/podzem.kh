@@ -379,9 +379,12 @@ figure img {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.pageLevel_0, pageLevel_1 {
+  padding: 0.5em;
+}
 #mainPage div img {
-    width: 210px;
-  }
+  width: 210px;
+}
 
 #articles a {
   font-family: 'Pangolin', cursive;  /* Ссылки на статьи и текст статей */
