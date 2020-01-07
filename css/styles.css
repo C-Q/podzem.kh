@@ -266,7 +266,7 @@ figure img {
 }
 
 
-/* menu { */
+/*                 menu-{    */
 .menu {
   /* z-index: 4; */
 }
@@ -303,15 +303,15 @@ figure img {
 .menu li a:active {
   opacity: 0.4;
 }
-/* menu } */
+/*                   }-menu     */
 
 
-/* content { */
+/*                   content-{    */
 .content {
   position: relative;
   z-index: 1;
   margin: 2.3em 2em;
-  text-align: justify;
+/*   text-align: justify; */
   font-family: 'Kurale', serif;  /* Текст страниц */ 
   font-size: 19px;
 }
@@ -392,7 +392,7 @@ figure img {
 .article h4 {
   font-family: 'El Messiri', sans-serif;  /*  */
 }
-/* content } */
+/*               }-content */
 
 
 
