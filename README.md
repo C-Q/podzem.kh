@@ -1,6 +1,6 @@
 <h2>Сайт о подземельях Харькова в общем, и об экскурсиях в них в частности</h2>
 
-<p style='font-size:110%; margin:25px 0 5px 0;'>Файл "configuration.js":</p>
+<p style='font-size:110%; margin:25px 0 5px 0;'>Функции "configuration.js": показать/скрыть боковое меню на маленьких экранах, и photo-viever</p>
 <ul style='font-size:110%;'>
   <li>-JS использовался для: адаптивности (show/hidd бокового меню) и для реализации слайдера</li>
 
